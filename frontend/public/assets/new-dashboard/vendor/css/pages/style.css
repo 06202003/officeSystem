@@ -1,0 +1,107 @@
+.buttonexport{
+    margin-top: 69px;
+    margin-right: 20px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 25%;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.popup-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.buttonex {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(133, 120, 233);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tableclass{
+  width: 300px;
+  height: 400px;
+}
+
+.border{
+  border-collapse: collapse;
+}
+
+td{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1;
+  border-style: solid;
+  width: max-content;
+}
+
+label{
+  text-align: justify;
+}
+
+.keahliahheading{
+  text-align: center;
+  width: 40%;
+}
